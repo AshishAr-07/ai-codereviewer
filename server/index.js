@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import authRoutes from "./routers/auth.routes.js";
 import { connectDB } from "./utils/dbConfig.js";
+import geminiRoutes from "./routers/gemini.routes.js";
 
 dotenv.config();
 
@@ -36,3 +37,4 @@ connectDB().then(() => {
 });
 
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/ai", geminiRoutes);
