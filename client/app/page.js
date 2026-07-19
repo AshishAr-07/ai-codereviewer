@@ -20,7 +20,7 @@ export default function Home() {
             </h1>
 
             <p className="text-[#8891A0] text-lg leading-relaxed max-w-md mb-10 font-light">
-              Drop any snippet, function, or file into Loupe and get back the
+              Drop any snippet, function, or file into Review ai and get back the
               kind of review a careful senior engineer would leave — bugs,
               security gaps, and style drift, explained in plain language.
               Every review is saved to your dashboard so nothing gets lost.
@@ -154,10 +154,10 @@ export default function Home() {
           {[
             {
               title: "Paste your code",
-              body: "Drop in a function, a file, or a whole diff. Loupe detects the language automatically — no setup or config.",
+              body: "Drop in a function, a file, or a whole diff. Review ai detects the language automatically — no setup or config.",
             },
             {
-              title: "Loupe reviews it",
+              title: "Review Ai reviews it",
               body: "In seconds, you get back a scored review: bugs, security issues, and style drift, each explained in plain language.",
             },
             {
@@ -192,7 +192,7 @@ export default function Home() {
               Every review, kept where you can find it
             </h2>
             <p className="text-[#8891A0] leading-relaxed max-w-md font-light mb-6">
-              Nothing you paste into Loupe disappears when you close the tab.
+              Nothing you paste into Review Ai disappears when you close the tab.
               Your dashboard keeps a running history of every review — the
               snippet, the score, and every finding — so you can track
               whether your code is actually getting cleaner.
