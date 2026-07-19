@@ -126,3 +126,27 @@ export const profileController = async (req, res) => {
     });
   }
 };
+
+
+export const getUserHistory = async (req, res) => {
+  try {
+    const user = await User.findById(req.user._id).select("history");
+
+    if (!user) {
+      return res.status(404).json({ success: false, message: "User not found" });
+    }
+
+    return res.status(200).json({
+      success: true,
+      count: user.history ? user.history.length : 0,
+      history: user.history || []
+    });
+  } catch (error) {
+    console.error("Fetch history error:", error.message);
+    return res.status(500).json({ 
+      success: false, 
+      message: "Failed to retrieve code review history", 
+      details: error.message 
+    });
+  }
+};
